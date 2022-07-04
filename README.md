@@ -22,3 +22,20 @@ git config --global http.sslVerify false
 
 参考链接：https://www.jianshu.com/p/103735801a2e
 
+
+## vscode
+
+### 利用终端打开 vscode
+
+在想要打开的目录下运行终端，输入如下命令：
+```bash
+code .
+```
+
+### 快捷键
+| 快捷点组合           | 作用                               |
+| -------------------- | ---------------------------------- |
+| alt + 箭头上/箭头下  | 一行代码可以上下移动               |
+| ctrl + shift + \     | 花括号跳转                         |
+| ctrl + 箭头上/箭头下 | 光标停留在初始行不动，界面上下移动 |
+| ctrl + Alt + Tab(ubuntu)     | 回退                               |
