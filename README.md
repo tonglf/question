@@ -59,6 +59,7 @@ code .
 ## Vim
 
 ### 基础配置
+
 ```bash
 # 显示行号
 set number
