@@ -39,3 +39,19 @@ code .
 | ctrl + shift + \     | 花括号跳转                         |
 | ctrl + 箭头上/箭头下 | 光标停留在初始行不动，界面上下移动 |
 | ctrl + Alt + Tab(ubuntu)     | 回退                               |
+
+## 系统安装
+
+### 安装虚拟机
+
+安装 VMware 最新版本，否则虚拟机不好用。
+
+### 安装双系统
+
+安装大体步骤：
+
+1. 制作u盘安装，Windows（官网可制作U盘或下载ISO）和Ubuntu（下载ISO后制作U盘，软件：[rufus](https://rufus.ie/downloads/)）；
+2. 从U盘启动电脑；
+3. 首先安装Windows系统，若遇到“无法在驱动器0的分区1上安装Windows”问题，百度可以解决；
+4. 安装Ubuntu系统，在U盘启动电脑后选择第二个选项（install ubuntu，选择第一项可能将之前的Windows系统覆盖，这样安装完成后系统只要Ubuntu了）进行安装。
+
