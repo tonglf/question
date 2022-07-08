@@ -23,6 +23,13 @@ git config --global http.sslVerify false
 参考链接：https://www.jianshu.com/p/103735801a2e
 
 
+### 生成 tokens
+
+在本地远程推送时，有时候需要输入 username 和 password，password 不是登录 github 时的密码，而是 tokens，在哪生成 tokens ？
+
+Settings/Developer settings/Personal access tokens
+
+
 ## vscode
 
 ### 利用终端打开 vscode
