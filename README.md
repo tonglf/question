@@ -55,3 +55,21 @@ code .
 3. 首先安装Windows系统，若遇到“无法在驱动器0的分区1上安装Windows”问题，百度可以解决；
 4. 安装Ubuntu系统，在U盘启动电脑后选择第二个选项（install ubuntu，选择第一项可能将之前的Windows系统覆盖，这样安装完成后系统只要Ubuntu了）进行安装。
 
+
+## Vim
+
+### 基础配置
+```bash
+# 显示行号
+set number
+
+# 支持使用鼠标
+set mouse=a
+
+# 设置缩进
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+```
