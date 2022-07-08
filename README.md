@@ -73,3 +73,6 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4
 ```
+
+参考链接：[阮一峰的网络日志:Vim 配置入门](https://www.ruanyifeng.com/blog/2018/09/vimrc.html)
+
