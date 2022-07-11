@@ -29,6 +29,26 @@ git config --global http.sslVerify false
 
 Settings/Developer settings/Personal access tokens
 
+## ubuntu
+
+### 安装微信
+
+参考链接：[deepin-wine-ubuntu](https://github.com/wszqkzqk/deepin-wine-ubuntu)
+
+```bash
+git clone https://github.com/wszqkzqk/deepin-wine-ubuntu.git
+
+cd deepin-wine-ubuntu
+
+./install.sh
+
+chmod +x install_2.8.22.sh
+./install_2.8.22.sh
+
+# 下载微信安装包 http://packages.deepin.com/deepin/pool/non-free/d/deepin.com.wechat/
+# 安装微信
+sudo dpkg -i XXX.deb
+```
 
 ## vscode
 
