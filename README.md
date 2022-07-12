@@ -29,6 +29,23 @@ git config --global http.sslVerify false
 
 Settings/Developer settings/Personal access tokens
 
+### 切换分支
+
+```bash
+git clone XXX.git
+
+cd DIR
+
+# 查看当前所在分支
+git branch
+
+# 列出所有分支
+git branch -a
+
+# 切换目标分支
+git checkout XXX
+```
+
 ## ubuntu
 
 ### 安装微信
