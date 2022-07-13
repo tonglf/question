@@ -94,6 +94,19 @@ gcc -v
 
 参考链接：[linux下gcc、g++不同版本的安装和切换](https://www.jianshu.com/p/f66eed3a3a25)
 
+### ubuntu 18.04 python 升级之后，终端打不开
+
+ubuntu 18.04 python 由 3.6 升级到 3.7 之后，终端不能直接打开，需要右键选择在终端打开才行
+
+解决方法：修改文件内容
+
+```bash
+sudo vim /usr/bin/gnome-terminal
+
+# 第一行 由 python3 改为 python3.6
+#!/usr/bin/python3.6
+```
+
 ### 安装微信
 
 参考链接：[deepin-wine-ubuntu](https://github.com/wszqkzqk/deepin-wine-ubuntu)
