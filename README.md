@@ -50,12 +50,49 @@ git checkout XXX
 
 ### gcc/g++ 不同版本的切换
 
+**ubuntu 18.04 gcc版本为7, ubuntu 16.04 gcc版本为5, 在18.04上使用gcc5**
+
 ```bash
-# 查看版本
+# 查看版本(以 gcc 为例)
 gcc --version
 
+# 添加 16.04 源
+sudo gedit /etc/apt/sources.list
 
+# 打开文件后，将以下两行内容添加至文件末尾
+deb http://dk.archive.ubuntu.com/ubuntu/ xenial main
+deb http://dk.archive.ubuntu.com/ubuntu/ xenial universe
+
+# 安装 gcc 5 / g++ 5（注意终端输出，可能有的不能安装，选择终端建议安装的源，实在不行的就不安装）
+sudo apt install gcc-5 gcc-5--multilib g++-5 g++-5--multilib
+
+# 使用update-alternatives设置gcc和g++：
+# update-alternatives是ubuntu系统中专门维护系统命令链接符的工具，通过它可以很方便的设置系统默认使用哪个命令、哪个软件版本。
+# 其中 10 ，20 是优先级数值可以自己设定，--slave能保证gcc和g++保持相同的版本。
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 20 --slave /usr/bin/g++ g++ /usr/bin/g++-5
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 10 --slave /usr/bin/g++ g++ /usr/bin/g++-7
+
+# 使用如下命令选择gcc的版本：
+sudo update-alternatives --config gcc
+
+# 终端输出结果如下
+# ======================================
+有 2 个候选项可用于替换 gcc (提供 /usr/bin/gcc)。
+
+  选择       路径          优先级  状态
+------------------------------------------------------------
+* 0            /usr/bin/gcc-7   70        自动模式
+  1            /usr/bin/gcc-5   50        手动模式
+  2            /usr/bin/gcc-7   70        手动模式
+
+要维持当前值[*]请按<回车键>，或者键入选择的编号：
+# ======================================
+
+# 验证是否修改成功
+gcc -v
 ```
+
+参考链接：[linux下gcc、g++不同版本的安装和切换](https://www.jianshu.com/p/f66eed3a3a25)
 
 ### 安装微信
 
