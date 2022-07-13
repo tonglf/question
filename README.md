@@ -48,6 +48,15 @@ git checkout XXX
 
 ## ubuntu
 
+### gcc/g++ 不同版本的切换
+
+```bash
+# 查看版本
+gcc --version
+
+
+```
+
 ### 安装微信
 
 参考链接：[deepin-wine-ubuntu](https://github.com/wszqkzqk/deepin-wine-ubuntu)
