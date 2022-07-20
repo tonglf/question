@@ -190,3 +190,25 @@ sudo apt-get install ros-melodic-rviz-visual-tools
 ```
 
 github 链接：[rviz-visual-tools](https://github.com/PickNikRobotics/rviz_visual_tools)
+
+### 播放 rosbag 并在 RVIZ 中显示
+
+```bash
+# 运行 roscore
+roscore
+
+# 播放 rosbag
+rosbag play XXX.bag -l
+
+# 打开 rviz，点击 Add 添加消息类型，以 点云(PointCloud2) 为例
+rviz
+
+# 需要输入 Pointloud2 的 topic 以及 Fixed Frame
+# 查看 Pointloud2 的 topic 
+rosbag info XXX.bag  #(在底部显示)
+
+# 查看 Fixed Frame
+rostopic echo topic(Pointloud2 的 topic ) | grep frame_id
+```
+
+
