@@ -46,6 +46,19 @@ git branch -a
 git checkout XXX
 ```
 
+### 新建分支并上传代码
+
+
+
+### 删除分支
+
+```bash
+git branch -d 分支名
+git branch -D 分支名		# 强制删除
+```
+
+
+
 ## ubuntu
 
 ### gcc/g++ 不同版本的切换
@@ -210,5 +223,4 @@ rosbag info XXX.bag  #(在底部显示)
 # 查看 Fixed Frame
 rostopic echo topic(Pointloud2 的 topic ) | grep frame_id
 ```
-
 
