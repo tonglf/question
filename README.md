@@ -48,6 +48,21 @@ git checkout XXX
 
 ### 新建分支并上传代码
 
+```bash
+# 新建分支
+git branch XXX
+
+# 切换分支
+git checkout XXX
+
+# 添加代码
+git add .
+git commit -m "xxx"
+
+# 提交代码到指定分支
+git push origin XXX(分支名称)
+```
+
 
 
 ### 删除分支
@@ -55,6 +70,18 @@ git checkout XXX
 ```bash
 git branch -d 分支名
 git branch -D 分支名		# 强制删除
+```
+
+
+
+### git commit 后撤销
+
+```bash
+# 撤销 commit，不撤销 add
+git reset --soft HEAD^
+
+# 同时撤销 commit 和 add
+git reset --soft HEAD^
 ```
 
 
