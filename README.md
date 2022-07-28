@@ -81,7 +81,7 @@ git branch -D 分支名		# 强制删除
 git reset --soft HEAD^
 
 # 同时撤销 commit 和 add
-git reset --soft HEAD^
+git reset --hard HEAD^
 ```
 
 
