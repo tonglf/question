@@ -88,6 +88,27 @@ git reset --hard HEAD^
 
 ## ubuntu
 
+### 不同软件版本切换
+
+当你在系统上装了某一个软件的很多版本的时候，有时候在用的时候需要选择合适的版本，那就需要进行不同版本之间的切换，（以python为例）：
+
+```bash
+# 查找已安装的版本，你需要知道你安装了什么版本
+ ls /usr/bin/python*
+ 
+# 将不同的版本加入列表中，最后一个数是优先级
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1  
+update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2 
+
+# 列出已经配置版本
+update-alternatives --list python
+
+# 切换系统默认的python版本
+sudo update-alternatives --config python 
+```
+
+参考链接：[ubuntu 下切换python版本](https://blog.csdn.net/samsu0108/article/details/121220366)
+
 ### gcc/g++ 不同版本的切换
 
 **ubuntu 18.04 gcc版本为7, ubuntu 16.04 gcc版本为5, 在18.04上使用gcc5**
