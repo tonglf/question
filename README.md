@@ -49,6 +49,12 @@ git checkout XXX
 ### 新建分支并上传代码
 
 ```bash
+# 更新本地代码库
+git pull
+
+# 查看所在分支
+git branch
+
 # 新建分支
 git branch XXX
 
