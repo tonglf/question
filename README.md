@@ -278,3 +278,17 @@ rosbag info XXX.bag  #(在底部显示)
 rostopic echo topic(Pointloud2 的 topic ) | grep frame_id
 ```
 
+### jsk_recognition_msgs/BoundingBoxArray.msg
+
+编译出错：`fatal error: jsk_recognition_msgs/BoundingBoxArray.h: 没有那个文件或目录`
+
+出错原因：重新安装 ros 之后，部分功能未安装
+
+解决方法：
+
+```bash
+sudo apt-get install ros-melodic-jsk-recognition-msgs & sudo apt-get install ros-melodic-jsk-rviz-plugins
+```
+
+总结：没有消息类型可以使用 `sudo apt-get install ros-melodic-XXX` 进行安装，后面的安装语句不是所有的消息类型都有 rviz 插件。
+
