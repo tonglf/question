@@ -202,6 +202,16 @@ chmod +x install_2.8.22.sh
 sudo dpkg -i XXX.deb
 ```
 
+### 微信输入框中文显示方框
+
+系统语言非中文时，中文全显示成方块，需要在 `/opt/deepinwine/tools/run.sh` 中将 WINE_CMD 那一行修改为
+
+```bash
+WINE_CMD="LC_ALL=zh_CN.UTF-8 deepin-wine"
+```
+
+参考链接：[ubuntu18.04下 中文字体显示为方块 方框 #136](https://github.com/wszqkzqk/deepin-wine-ubuntu/issues/136)
+
 ### 安装搜狗输入法
 
 Ubuntu 18.04 安装搜狗输入法后，只能输入英文，不能输入中文，可能是缺少安装依赖，解决方法是在完成安装搜狗输入法后，安装如下依赖：
