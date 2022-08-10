@@ -202,6 +202,18 @@ chmod +x install_2.8.22.sh
 sudo dpkg -i XXX.deb
 ```
 
+### 安装搜狗输入法
+
+Ubuntu 18.04 安装搜狗输入法后，只能输入英文，不能输入中文，可能是缺少安装依赖，解决方法是在完成安装搜狗输入法后，安装如下依赖：
+
+```bash
+sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2
+ 
+sudo apt install libgsettings-qt1
+```
+
+参考博客：[ubuntu 20.04 安装好搜狗输入法无法输入中文，只能输入英文的问题，因为没有安装依赖](https://blog.csdn.net/ccsodefhy/article/details/123122200)
+
 ## vscode
 
 ### 利用终端打开 vscode
