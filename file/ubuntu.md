@@ -151,6 +151,8 @@ WINE_CMD="LC_ALL=zh_CN.UTF-8 deepin-wine"
 
 参考链接：[ubuntu18.04下 中文字体显示为方块 方框 #136](https://github.com/wszqkzqk/deepin-wine-ubuntu/issues/136)
 
+如果之后又出现上述情况，重启微信即可。
+
 
 
 ## 安装搜狗输入法，不能输入中文
