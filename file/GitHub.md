@@ -51,6 +51,12 @@ git checkout XXX
 ## 新建分支并上传代码
 
 ```bash
+# 查看所在分支
+git branch
+
+# 切换至 master 分支
+git checkout master
+
 # 更新本地代码库
 git pull
 
@@ -69,7 +75,11 @@ git commit -m "xxx"
 
 # 提交代码到指定分支
 git push origin XXX(分支名称)
+
+# 在 UI 界面提交合并请求
 ```
+
+注：提交的时候，先去 master 分支 git pull 一下，再去新建分支更新内容，否则在别的分支 git pull，然后再将新建的分支合并到 master 可能会出现 rebase 情况，这是由冲突导致的，别人在 master 提交了代码，你没有更新却还想往 master 上面 push 。
 
 
 
