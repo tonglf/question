@@ -45,3 +45,29 @@ sudo apt-get install ros-melodic-jsk-recognition-msgs & sudo apt-get install ros
 ```
 
 总结：没有消息类型可以使用 `sudo apt-get install ros-melodic-XXX` 进行安装，后面的安装语句不是所有的消息类型都有 rviz 插件。
+
+## Could not find a package configuration file provided by "aruco_ros" with any of the following names:
+
+```bash
+EIGEN3_INCLUDE_DIR MEKF: /usr/include/eigen3
+-- Could NOT find aruco_ros (missing: aruco_ros_DIR)
+-- Could not find the required component 'aruco_ros'. The following CMake error indicates that you either need to install the package with the same name or change your environment so that it can be found.
+CMake Error at /opt/ros/melodic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "aruco_ros" with
+  any of the following names:
+
+    aruco_rosConfig.cmake
+    aruco_ros-config.cmake
+
+  Add the installation prefix of "aruco_ros" to CMAKE_PREFIX_PATH or set
+  "aruco_ros_DIR" to a directory containing one of the above files.  If
+  "aruco_ros" provides a separate development package or SDK, be sure it has
+  been installed.
+```
+
+解决方法：
+
+```bash
+sudo apt-get install ros-melodic-aruco-ros
+```
+
