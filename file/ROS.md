@@ -71,3 +71,35 @@ CMake Error at /opt/ros/melodic/share/catkin/cmake/catkinConfig.cmake:83 (find_p
 sudo apt-get install ros-melodic-aruco-ros
 ```
 
+## rviz 点击某个点显示该点的信息
+
+方法一：
+		rviz上方有 `Select` 选项，右击，勾选 Selection 选项，在左面项目栏里就有 Selection 的部分了。点击上方的  `Select` 选项，再选中点，左侧 Selection 里就会显示该点的信息了，包括：Position（X、Y、Z）、intensity、ring、timestamp。
+
+方法二：
+		rostopic list 会显示 /clicked_point，去终端打印该话题的内容：
+
+```bash
+rostopic echo /clicked_point
+```
+
+点击 rviz 上方的 `Publish Point`，然后再选择点，在刚打开的终端就会显示该点的信息：
+
+```bash
+~$ rostopic echo /clicked_point
+header: 
+  seq: 0
+  stamp: 
+    secs: 1661916298
+    nsecs: 655576318
+  frame_id: "base_link"
+point: 
+  x: 108.888648987
+  y: 25.8663330078
+  z: 2.0133972168
+---
+
+```
+
+
+

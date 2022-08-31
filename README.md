@@ -66,10 +66,10 @@ Record recent problems and their solutions.
 [ROS](file/ROS.md)
 
 - 安装 rviz-visual-tools
-
 - 播放 rosbag 并在 RVIZ 中显示
-
 - jsk_recognition_msgs/BoundingBoxArray.msg: 没有那个文件或目录
+- Could not find a package configuration file provided by "aruco_ros" with any of the following names:
+- rviz 点击某个点显示该点的信息
 
 
 
