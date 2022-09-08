@@ -46,6 +46,8 @@ sudo apt-get install ros-melodic-jsk-recognition-msgs & sudo apt-get install ros
 
 总结：没有消息类型可以使用 `sudo apt-get install ros-melodic-XXX` 进行安装，后面的安装语句不是所有的消息类型都有 rviz 插件。
 
+
+
 ## Could not find a package configuration file provided by "aruco_ros" with any of the following names:
 
 ```bash
@@ -70,6 +72,8 @@ CMake Error at /opt/ros/melodic/share/catkin/cmake/catkinConfig.cmake:83 (find_p
 ```bash
 sudo apt-get install ros-melodic-aruco-ros
 ```
+
+
 
 ## rviz 点击某个点显示该点的信息
 
@@ -103,3 +107,47 @@ point:
 
 
 
+## ROS 使用 PCL 出错
+
+在ubuntu18.04上使用ros中的PCL库时会遇到lz4 冲突问题，问题如下：
+
+```bash
+error: conflicting declaration ‘typedef struct LZ4_streamDecode_t LZ4_streamDecode_t’
+typedef struct { unsigned long long table[LZ4_STREAMDECODESIZE_U64]; } LZ4_streamDecode_t;
+```
+
+解决方法如下：
+
+```bash
+sudo mv /usr/include/flann/ext/lz4.h /usr/include/flann/ext/lz4.h.bak
+sudo mv /usr/include/flann/ext/lz4hc.h /usr/include/flann/ext/lz4.h.bak
+
+sudo ln -s /usr/include/lz4.h /usr/include/flann/ext/lz4.h
+sudo ln -s /usr/include/lz4hc.h /usr/include/flann/ext/lz4hc.h
+```
+
+
+
+## PCL：对 '...' 未定义的引用
+
+ 例如：
+
+```bash
+对‘pcl::search::Search<pcl::PointXYZ>::getName() const’未定义的引用
+```
+
+原因：
+	新定义了 PointT 类型，导致使用某些类使用出错。
+
+解决方法：
+	添加 宏定义以及 hpp 文件，在 PCL 的官方文档中已经说明过该情况。
+
+```cpp
+#define PCL_NO_PRECOMPILE	// 在第一行，添加宏定义
+#include <pcl/search/kdtree.h>
+#include <pcl/search/impl/kdtree.hpp>	// 添加 hpp 文件
+
+// #include <pcl/impl/instantiate.hpp>		// 若有必要可添加该文件
+```
+
+参考链接: [官方文档](https://pcl.readthedocs.io/projects/tutorials/en/master/adding_custom_ptype.html#how-to-add-a-new-pointt-type).
