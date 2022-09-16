@@ -151,3 +151,11 @@ sudo ln -s /usr/include/lz4hc.h /usr/include/flann/ext/lz4hc.h
 ```
 
 参考链接: [官方文档](https://pcl.readthedocs.io/projects/tutorials/en/master/adding_custom_ptype.html#how-to-add-a-new-pointt-type).
+
+
+
+## PCL Assertion `px != 0' failed
+
+原因：智能指针未初始化。
+
+解决：使用前初始化。
