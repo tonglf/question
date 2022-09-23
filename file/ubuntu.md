@@ -120,6 +120,36 @@ set softtabstop=4
 
 
 
+## dpkg
+
+### 安装
+
+```bash
+sudo dpkg -i XXX.deb
+```
+
+### 卸载
+
+```bash
+# 卸载
+sudo dpkg -r XXX
+
+# 卸载并删除配置文件    
+sudo dpkg -r --purge XXX    
+```
+
+### 查看
+
+```bash
+# 显示所有安装的软件
+dpkg -l 
+
+# 查找安装软件的名称(不知道软件的名称，XXX写个大概，然后查询)
+dpkg -l | grep XXX
+```
+
+更多命令，参考：`dpkg --help`。
+
 ## 安装微信
 
 参考链接：[deepin-wine-ubuntu](https://github.com/wszqkzqk/deepin-wine-ubuntu)
