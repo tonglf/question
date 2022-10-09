@@ -70,6 +70,9 @@ Record recent problems and their solutions.
 - jsk_recognition_msgs/BoundingBoxArray.msg: 没有那个文件或目录
 - Could not find a package configuration file provided by "aruco_ros" with any of the following names:
 - rviz 点击某个点显示该点的信息
+- ROS 使用 PCL 出错
+- PCL：对 '...' 未定义的引用
+- PCL Assertion `px != 0' failed
 
 
 
