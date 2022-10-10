@@ -24,19 +24,14 @@ Record recent problems and their solutions.
 [ubuntu](file/ubuntu.md)
 
 - 终端快捷键
-
+- 查看 IP 地址
 - 不同软件版本切换
-
 - gcc/g++ 不同版本的切换
-
 - ubuntu 18.04 python 升级之后，终端打不开
 - Vim
   - 基础配置
-
 - 安装微信
-
 - 微信输入框中文显示方框
-
 - 安装搜狗输入法，不能输入中文
 
 
