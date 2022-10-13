@@ -153,7 +153,7 @@ sudo dpkg -i XXX.deb
 sudo dpkg -r XXX
 
 # 卸载并删除配置文件    
-sudo dpkg -r --purge XXX    
+sudo dpkg --purge XXX    
 ```
 
 ### 查看
@@ -167,6 +167,18 @@ dpkg -l | grep XXX
 ```
 
 更多命令，参考：`dpkg --help`。
+
+
+
+## 安装视频播放软件 mpv
+
+```bash
+sudo apt-get update
+
+sudo apt-get install mpv
+```
+
+
 
 ## 安装微信
 
