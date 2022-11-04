@@ -1,4 +1,4 @@
-# GitHub
+# git
 
 ## 更换电脑后，git clone 出错
 

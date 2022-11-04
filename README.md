@@ -1,9 +1,9 @@
 # question
 Record recent problems and their solutions.
 
-## GitHub
+## git
 
-[GitHub](file/GitHub.md)
+[git](file/git.md)
 
 - 更换电脑后，git clone 出错
 - 生成 tokens
