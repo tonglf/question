@@ -121,3 +121,18 @@ git reset --hard id # 想要回退版本的 id
 git push origin HEAD --force
 ```
 
+
+
+## 查看历史操作，回退版本
+
+```bash
+git reflog
+
+git reset --hard id # id
+```
+
+
+
+## 因回退操作导致的文件丢失
+
+一共修改了两部分文件：A 和 B，提交了一部分文件（A），另一部分（B）未提交，提交后 push 到最新。发现 A 部分有问题，回退到未提交的版本，这时发现文件 B 没有了。

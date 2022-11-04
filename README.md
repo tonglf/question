@@ -12,6 +12,8 @@ Record recent problems and their solutions.
 - 删除分支
 - git commit 后撤销
 - 回退到之前版本
+- 查看历史操作，回退版本
+- 因回退操作导致的文件丢失
 
 
 
