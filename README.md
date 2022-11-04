@@ -6,16 +6,12 @@ Record recent problems and their solutions.
 [GitHub](file/GitHub.md)
 
 - 更换电脑后，git clone 出错
-
 - 生成 tokens
-
 - 切换分支
-
 - 新建分支并上传代码
-
 - 删除分支
-
 - git commit 后撤销
+- 回退到之前版本
 
 
 

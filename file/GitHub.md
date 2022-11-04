@@ -102,3 +102,22 @@ git reset --soft HEAD^
 git reset --hard HEAD^
 ```
 
+
+
+## 回退到之前版本
+
+提交当前修改后，想撤销此次修改，并回退到之前版本，注：已 commit、push。
+
+```bash
+git log	# 将显示提交的历史
+#commit 809f4158ca76baeddbb8d8cb8c6a87e990a6bf7e (HEAD -> ev/mm, origin/ev/mm)  （commit id 以及分支名）
+#Author: XXX （作者）
+#Date:   Fri Nov 4 16:16:59 2022 +0800 （时间）
+
+#    XXX（commit 注释信息）
+
+git reset --hard id # 想要回退版本的 id
+
+git push origin HEAD --force
+```
+
