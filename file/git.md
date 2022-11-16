@@ -136,3 +136,20 @@ git reset --hard id # id
 ## 因回退操作导致的文件丢失
 
 一共修改了两部分文件：A 和 B，提交了一部分文件（A），另一部分（B）未提交，提交后 push 到最新。发现 A 部分有问题，回退到未提交的版本，这时发现文件 B 没有了。
+
+
+
+## 将多次提交合并为一次
+
+参考：[git合并多次提交为一次提交](https://blog.csdn.net/yangzijiangtou/article/details/123068284)
+
+建议根据参考博客操作。大体步骤如下：
+
+```bash
+git log
+
+git rebase -i commit-id #(commit-id是需要合并的提交中最早的提交的前一个id)
+
+git push -f 或 git push origin xxx/xxx -f
+```
+

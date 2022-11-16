@@ -14,6 +14,7 @@ Record recent problems and their solutions.
 - 回退到之前版本
 - 查看历史操作，回退版本
 - 因回退操作导致的文件丢失
+- 将多次提交合并为一次
 
 
 
