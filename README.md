@@ -29,6 +29,8 @@ Record recent problems and their solutions.
 - ubuntu 18.04 python 升级之后，终端打不开
 - Vim
   - 基础配置
+- dpkg
+- conda
 - 安装视频播放软件 mpv
 - 安装微信
 - 微信输入框中文显示方框

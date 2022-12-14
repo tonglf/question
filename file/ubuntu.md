@@ -170,6 +170,36 @@ dpkg -l | grep XXX
 
 
 
+## conda
+
+```bash
+# 创建虚拟环境（后面是Python版本）
+conda create --name my_first_env python=3.6
+
+# 列出存在的虚拟环境
+conda env list
+
+# 进入某个虚拟环境
+conda activate virtual_env
+
+# 如果进不去，先输入以下命令再进入
+source activate
+
+# 显示环境内安装的软件
+conda list
+
+# 安装与卸载
+pip install
+pip uninstall
+conda install
+conda uninstall 
+
+# 退出虚拟环境
+conda deactivate
+```
+
+
+
 ## 安装视频播放软件 mpv
 
 ```bash
