@@ -196,6 +196,10 @@ conda uninstall
 
 # 退出虚拟环境
 conda deactivate
+
+# other
+# 默认不进入 base
+conda config --set auto_activate_base false
 ```
 
 
