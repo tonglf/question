@@ -23,6 +23,7 @@ Record recent problems and their solutions.
 [ubuntu](file/ubuntu.md)
 
 - 终端快捷键
+- 终端按 ctrl+s 就卡住
 - 查看 IP 地址
 - 不同软件版本切换
 - gcc/g++ 不同版本的切换
