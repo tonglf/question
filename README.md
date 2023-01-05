@@ -70,6 +70,6 @@ Record recent problems and their solutions.
 - ROS 使用 PCL 出错
 - PCL：对 '...' 未定义的引用
 - PCL Assertion `px != 0' failed
-
+- 用 ros 工具从 bag 文件中提取图片
 
 
