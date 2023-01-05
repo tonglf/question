@@ -159,3 +159,14 @@ sudo ln -s /usr/include/lz4hc.h /usr/include/flann/ext/lz4hc.h
 原因：智能指针未初始化。
 
 解决：使用前初始化。
+
+## 用 ros 工具从 bag 文件中提取图片
+
+```bash
+# 如果输出的图片数量与 rosbag info 命令查询得到的数量不符，可以减少 _sec_per_frame 参数的值。
+rosrun image_view extract_images _sec_per_frame:=0.01 image:=<topic>
+
+rosbag play XXX.bag
+```
+
+参考博客：[利用ROS工具从bag文件中提取图片](http://t.zoukankan.com/arkenstone-p-6676203.html)
