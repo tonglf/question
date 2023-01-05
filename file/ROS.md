@@ -160,7 +160,17 @@ sudo ln -s /usr/include/lz4hc.h /usr/include/flann/ext/lz4hc.h
 
 解决：使用前初始化。
 
-## 用 ros 工具从 bag 文件中提取图片
+## 用 ros 工具从 bag 文件中提取点云和图片
+
+**点云**
+
+```bash
+rosrun pcl_ros bag_to_pcd <XXX.bag> <topic> <output_directory>
+```
+
+参考博客：[ROS：bag数据包内容提取——雷达点云数据和imu数据](https://blog.csdn.net/m0_48748418/article/details/126004787)
+
+**图片**
 
 ```bash
 # 如果输出的图片数量与 rosbag info 命令查询得到的数量不符，可以减少 _sec_per_frame 参数的值。
