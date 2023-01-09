@@ -180,3 +180,21 @@ rosbag play XXX.bag
 ```
 
 参考博客：[利用ROS工具从bag文件中提取图片](http://t.zoukankan.com/arkenstone-p-6676203.html)
+
+## 5.000000000000000000000000000000000000e-01
+
+在编译过程中遇到以下问题:
+
+```bash
+eric literal operator 'operator""Q'
+   BOOST_DEFINE_MATH_CONSTANT(half, 5.000000000000000000000000000000000000e-01, "5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e-01")
+   ```
+   
+  解决方法:
+  
+  1.  可能是 由于gcc 版本问题，替换成 5；
+  2. 参考博客： [ad_with_lanelet2 编译问题解决](https://blog.csdn.net/qq_35632833/article/details/112923613)  
+
+
+
+
